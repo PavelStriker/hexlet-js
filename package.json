@@ -2,20 +2,25 @@
   "name": "hexlet",
   "type": "module",
   "version": "1.0.0",
-  "description": "Мой первый проект на Хекслете",
+  "description": "hexlet",
   "main": "index.js",
-  "dependencies": {
-    "lodash": "^4.17.21"
+  "paths": {
+      "@modules/*":["./src/app/modules/*"]
   },
-  "devDependencies": {},
+  "directories": {
+    "test": "tests"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --experimental-modules --no-warnings ./tests/capitalize.test.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PavelStriker/hexlet-js.git"
   },
-  "author": "",
+  "keywords": [
+    "hexlet"
+  ],
+  "author": "PavelStriker",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/PavelStriker/hexlet-js/issues"
